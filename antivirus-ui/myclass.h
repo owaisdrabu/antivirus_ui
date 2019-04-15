@@ -11,7 +11,7 @@ class MyClass : public QMainWindow
 public:
 	MyClass(QWidget *parent = 0);
 	~MyClass();
-
+	//hello world
 private:
 	Ui::MyClassClass ui;
 	private slots:
