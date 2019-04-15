@@ -30,6 +30,11 @@ public:
     QPushButton *pushButton;
     QPushButton *pushButton_2;
     QLabel *label;
+    QPushButton *pushButton_6;
+    QPushButton *pushButton_7;
+    QPushButton *pushButton_8;
+    QPushButton *pushButton_9;
+    QPushButton *pushButton_10;
 
     void setupUi(QMainWindow *MyClassClass)
     {
@@ -41,15 +46,15 @@ public:
         centralWidget->setObjectName(QStringLiteral("centralWidget"));
         pushButton_3 = new QPushButton(centralWidget);
         pushButton_3->setObjectName(QStringLiteral("pushButton_3"));
-        pushButton_3->setGeometry(QRect(0, 0, 31, 41));
+        pushButton_3->setGeometry(QRect(10, 0, 31, 41));
         pushButton_3->setStyleSheet(QLatin1String("background:transparent;\n"
 "background-repeat: no-repeat;\n"
 "background-image: url(:/MyClass/logo.png);"));
         pushButton_4 = new QPushButton(centralWidget);
         pushButton_4->setObjectName(QStringLiteral("pushButton_4"));
-        pushButton_4->setGeometry(QRect(40, 170, 161, 71));
+        pushButton_4->setGeometry(QRect(70, 160, 161, 71));
         pushButton_4->setStyleSheet(QLatin1String("background: transparent;\n"
-"image: url(:/helloworld/research (2).png);\n"
+"image: url(:/MyClass/scan.png);\n"
 "image-position: left;\n"
 "padding: 15px;\n"
 "background-color: rgb(241, 241, 241);\n"
@@ -67,11 +72,58 @@ public:
 ""));
         label = new QLabel(centralWidget);
         label->setObjectName(QStringLiteral("label"));
-        label->setGeometry(QRect(40, 0, 111, 31));
+        label->setGeometry(QRect(50, 0, 111, 31));
         label->setStyleSheet(QStringLiteral("background:transparent;"));
+        pushButton_6 = new QPushButton(centralWidget);
+        pushButton_6->setObjectName(QStringLiteral("pushButton_6"));
+        pushButton_6->setGeometry(QRect(260, 160, 161, 71));
+        pushButton_6->setStyleSheet(QLatin1String("background: transparent;\n"
+"background-color: rgb(241, 241, 241);\n"
+"image: url(:/MyClass/update.png);\n"
+"image-position: left;\n"
+"padding-left: 10px;"));
+        pushButton_7 = new QPushButton(centralWidget);
+        pushButton_7->setObjectName(QStringLiteral("pushButton_7"));
+        pushButton_7->setGeometry(QRect(450, 160, 161, 71));
+        pushButton_7->setStyleSheet(QLatin1String("background: transparent;\n"
+"image: url(:/MyClass/card.png);\n"
+"background-color: rgb(241, 241, 241);\n"
+"image-position: left;\n"
+"padding-left: 15px;\n"
+""));
+        pushButton_8 = new QPushButton(centralWidget);
+        pushButton_8->setObjectName(QStringLiteral("pushButton_8"));
+        pushButton_8->setGeometry(QRect(450, 250, 161, 71));
+        pushButton_8->setStyleSheet(QLatin1String("background: transparent;\n"
+"image: url(:/MyClass/protection.png);\n"
+"background-color: rgb(241, 241, 241);\n"
+"image-position: left;\n"
+"padding-left: 15px;\n"
+"\n"
+""));
+        pushButton_9 = new QPushButton(centralWidget);
+        pushButton_9->setObjectName(QStringLiteral("pushButton_9"));
+        pushButton_9->setGeometry(QRect(260, 250, 161, 71));
+        pushButton_9->setStyleSheet(QLatin1String("background: transparent;\n"
+"image: url(:/MyClass/parental.png);\n"
+"background-color: rgb(241, 241, 241);\n"
+"image-position: left;\n"
+"padding-left: 15px;\n"
+"\n"
+""));
+        pushButton_10 = new QPushButton(centralWidget);
+        pushButton_10->setObjectName(QStringLiteral("pushButton_10"));
+        pushButton_10->setGeometry(QRect(70, 250, 161, 71));
+        pushButton_10->setStyleSheet(QLatin1String("background: transparent;\n"
+"image: url(:/MyClass/privacy.png);\n"
+"background-color: rgb(241, 241, 241);\n"
+"image-position: left;\n"
+"padding-left: 15px;\n"
+""));
         MyClassClass->setCentralWidget(centralWidget);
 
         retranslateUi(MyClassClass);
+        QObject::connect(pushButton_4, SIGNAL(clicked()), pushButton_4, SLOT(click()));
 
         QMetaObject::connectSlotsByName(MyClassClass);
     } // setupUi
@@ -90,6 +142,12 @@ public:
         pushButton->setText(QApplication::translate("MyClassClass", "x", Q_NULLPTR));
         pushButton_2->setText(QApplication::translate("MyClassClass", "-", Q_NULLPTR));
         label->setText(QApplication::translate("MyClassClass", "Antivirus", Q_NULLPTR));
+        pushButton_6->setText(QApplication::translate("MyClassClass", "  Database Update", Q_NULLPTR));
+        pushButton_7->setText(QApplication::translate("MyClassClass", "Safe Money", Q_NULLPTR));
+        pushButton_8->setText(QApplication::translate("MyClassClass", "Protection For \n"
+" All Devices", Q_NULLPTR));
+        pushButton_9->setText(QApplication::translate("MyClassClass", "  Parental Control", Q_NULLPTR));
+        pushButton_10->setText(QApplication::translate("MyClassClass", "   Privacy Protection", Q_NULLPTR));
     } // retranslateUi
 
 };

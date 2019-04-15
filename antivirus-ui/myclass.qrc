@@ -1,5 +1,14 @@
 <RCC>
   <qresource prefix="MyClass">
+    <file>back.png</file>
+    <file>back.png</file>
+    <file>add.png</file>
+    <file>run.png</file>
+    <file>privacy.png</file>
+    <file>parental.png</file>
+    <file>protection.png</file>
+    <file>card.png</file>
+    <file>update.png</file>
     <file>scan.png</file>
     <file>logo.png</file>
     <file>background.png</file>

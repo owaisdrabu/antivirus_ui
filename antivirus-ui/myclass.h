@@ -3,6 +3,7 @@
 
 #include <QtWidgets/QMainWindow>
 #include "ui_myclass.h"
+#include "ui_scan.h"
 
 class MyClass : public QMainWindow
 {
@@ -11,12 +12,13 @@ class MyClass : public QMainWindow
 public:
 	MyClass(QWidget *parent = 0);
 	~MyClass();
-	//hello world
+
 private:
 	Ui::MyClassClass ui;
 	private slots:
 	void exit();
 	void minimize();
+	void gotoscan();
 };
 
 #endif // MYCLASS_H
