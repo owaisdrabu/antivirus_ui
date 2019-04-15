@@ -1,0 +1,7 @@
+<RCC>
+  <qresource prefix="MyClass">
+    <file>scan.png</file>
+    <file>logo.png</file>
+    <file>background.png</file>
+  </qresource>
+</RCC>
