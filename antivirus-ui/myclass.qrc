@@ -1,5 +1,15 @@
 <RCC>
   <qresource prefix="MyClass">
+    <file>guard.png</file>
+    <file>fullscan.png</file>
+    <file>usbscan.png</file>
+    <file>quick.png</file>
+    <file>selective.png</file>
+    <file>usbscan.png</file>
+    <file>fullscan.png</file>
+    <file>fullscan.png</file>
+    <file>fullscan.png</file>
+    <file>fullscan.png</file>
     <file>back.png</file>
     <file>back.png</file>
     <file>add.png</file>

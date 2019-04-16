@@ -1,15 +1,22 @@
 #include "myclass.h"
 #include "windows.h"
-#include "ui_scan.h"
+#include "scan.h"
+#include <QtWidgets/QApplication>
+
+
 
 MyClass::MyClass(QWidget *parent)
 	: QMainWindow(parent)
 {
+	//*w = new QWidget();
+	//ui.setupUi(Scan);
+	//Scan w;
 	ui.setupUi(this);
 	setWindowFlags(Qt::Window | Qt::FramelessWindowHint);
 	connect(ui.pushButton, SIGNAL(clicked()), this, SLOT(exit()));
 	connect(ui.pushButton_2, SIGNAL(clicked()), this, SLOT(minimize()));
 	connect(ui.pushButton_4, SIGNAL(clicked()), this, SLOT(gotoscan()));
+	
 }
 
 MyClass::~MyClass()
@@ -25,6 +32,7 @@ void MyClass::minimize() {
 }
 
 void MyClass::gotoscan(){
-	//NewWindow *scan = new NewWindow();
-	//scan->show();
+	/*newscan = new Scan();
+	newscan->show();*/
+	//an
 }

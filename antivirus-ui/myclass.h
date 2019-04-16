@@ -4,6 +4,7 @@
 #include <QtWidgets/QMainWindow>
 #include "ui_myclass.h"
 #include "ui_scan.h"
+#include "scan.h"
 
 class MyClass : public QMainWindow
 {
@@ -19,6 +20,9 @@ private:
 	void exit();
 	void minimize();
 	void gotoscan();
+
+
+
 };
 
 #endif // MYCLASS_H
